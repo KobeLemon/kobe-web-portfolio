@@ -1,0 +1,226 @@
+/* Laptop / Desktop Large Sizing */
+@media only screen and (min-width: 1028px) {
+
+    /* Large Styling of the Header and its descendants */
+
+    header * {
+        margin: auto;
+        
+    }
+
+    .headerLogoBox {
+        margin: 0;
+    }
+
+    .headerLogo {
+        width: 11rem;
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+
+    .headerBox {
+        width: fit-content;
+    }
+
+    #navbar {
+        margin-bottom: 1rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav {
+        background-color: #1d5e19;
+        margin-right: 39%;
+        margin-top: 1rem;
+        border-radius: 0.7rem;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+        border-bottom: 0px;
+        width: 100%;
+        padding: 1rem;
+        margin: 0rem;
+    }
+
+    #primaryNav {
+        margin: 0rem;
+    }
+    
+    #currentDate {
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+    
+    /* End of Header Large Styling */
+
+    /* Main Content Large Styling */
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 0.8rem;
+        margin: 1rem;
+    }
+
+    #heroBanner {
+        grid-column: 2/4;
+        grid-row: 1/span 2;
+    }
+
+    #heroBanner h2 {
+        margin: 0;
+    }
+
+    #largeOverlay {
+        display: block;
+    }
+
+    #smallOverlay, #mediumOverlay {
+        display: none;
+    }
+
+    .events {
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+    }
+
+    .weather {
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+    }
+
+    #temperature {
+        margin: 0;
+        padding: 0rem;
+        font-size: 2.45rem;
+    }
+
+    .weather p {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    .join {
+        grid-column: 1/span 1;
+        grid-row: 3/span 1; 
+    }
+
+    .news {
+        grid-column: 2/span 2;
+        grid-row: 3/span 1;
+    }
+
+    #spotlightBox {
+        flex-direction: column;
+        gap: 1rem;
+        grid-column: 4/span 1;
+        grid-row: 1/span 3;
+        height: 100%;
+    }
+
+    .spotlights {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .spotlights hr {
+        display: block;
+    }
+
+    .spotlights * {
+        margin-top: 1.5rem;
+    }
+    
+    /* End of Main Content Large Styling */
+
+    /* Discover Page Large Styling */
+    .hoverZoom:hover, .cityInfoSource a:hover {
+        transform: scale(1.1);
+    }
+    
+    .hoverZoom, .cityInfoSource a {
+        transition: 0.25s ease;
+    }
+    /* End of Discover Page Large Styling */
+
+    /* Join Page Large Styling */
+    .inputWidth {
+        width: 25rem
+    }
+    /* End of Join Page Large Styling */
+
+    /* Contact Page Large Styling */
+
+    #contactPage {
+        justify-content: space-evenly;
+    }
+
+    .indicateRequired {
+        margin-left: 3rem;
+    }
+
+    .contactBox1, .contactBox2 {
+        gap: 4.5rem;
+        justify-content: center;
+    }
+
+    #contactPage hr {
+        left: auto;
+    }
+
+    #message {
+        margin: 1rem auto;
+    }
+
+    /* End of Contact Page Large Styling */
+
+    /* Footer Large Styling */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    footer figure {
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .footerTitle {
+        display: flex;
+        column-gap: 0.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .chamberAddress {
+        margin-top: 0rem;
+    }
+
+    .footerBox1 {
+        text-align: left;
+        margin-right: auto;
+        max-width: 20rem;
+    }
+        
+    .footerBox2 {
+        margin-left: 3rem;
+        margin-right: 10rem;
+    }
+
+    .footerBox3 {
+        display: flex;
+        font-size: 0.8rem;
+        margin: auto;
+        gap: 0.5rem;
+    }
+    /* End of Footer Large Styling */
+
+}

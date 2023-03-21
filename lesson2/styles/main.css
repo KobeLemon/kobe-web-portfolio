@@ -1,0 +1,137 @@
+html {
+    background-color: rgb(255, 255, 240);
+}
+
+header {
+    background-color: rgb(0,0,108);
+    border-radius: 5px;
+    color: rgb(90, 209, 138);
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    padding: 5px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Serif Display', 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+a, h4 {
+    font-family: 'Noto Sans', 'PT Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+header > h1 {
+    font-size: 3em;
+}
+
+header > h2 {
+    font-size: 2.3em;
+}
+
+body {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.containers {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.principle-titles {
+    background-color: rgb(54,129,84);
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+nav {
+    text-align: center;
+}
+
+#home-link, #top-page-link {
+    color: white;
+    letter-spacing: 1px;
+}
+
+a {
+    padding: 5px;
+}
+
+a:hover, #top-page-link:hover { 
+    background-color: rgb(54,129,84);
+    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+}
+
+nav a:link {
+    background-color: rgb(0,0,108);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(0,0,108);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(90, 209, 138);
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    text-align: center;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.website-name {
+    background-color: rgb(54,129,84);
+    color: white;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.website-name, .website-links {
+    display: block;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.website-links {
+    font-size: 1rem;
+}
+
+figure {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+.principle-descriptions {
+    width: 90%;
+    margin: 10px auto auto auto;
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

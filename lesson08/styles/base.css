@@ -1,0 +1,63 @@
+html {
+    background-color: rgb(255,255,240);
+}
+
+body {
+    margin: auto;
+    width: fit-content;
+}
+
+header {
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    border-spacing: 0;
+    border: 1px solid black;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid black;
+
+}
+
+caption {
+    caption-side: bottom;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+#tableHeader {
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+#tableTitle {
+    color: white;
+    background-color: black;
+    font-size: 2rem; 
+}
+
+.accountName {
+    font-size: 1.5rem;
+}
+
+.featureName {
+    font-size: 1.5rem;
+}
+
+.featureYes {
+    font-size: 2rem;
+    color: green;
+}
+
+.featureNo {
+    font-size: 2rem;
+    color: red;
+}

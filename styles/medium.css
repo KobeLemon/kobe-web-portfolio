@@ -1,0 +1,46 @@
+/* This makes the home page responsive to phones */
+@media only screen and (max-width: 32.5em) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+        background-color: rgb(0,0,108);
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    }
+
+    #profilepic {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    #name {
+        font-size: 2.75em;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #portaltitle {
+        font-size: 1.5em;
+        margin: 25px 20px 25px 35px;
+    }
+
+    body {
+        margin: 10px;
+        width: 95%;
+    }
+
+    a p {
+        line-height: 10px;
+    }
+
+    footer {
+        margin: auto;
+        width: 95%;
+    }
+}

@@ -1,0 +1,56 @@
+html {
+    background-color: rgb(255,255,240);
+}
+
+header, footer {
+    background-color: #247620;
+    color: whitesmoke;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 2px solid #001d49;
+}
+
+main {
+    margin: 1.5rem auto;
+    color: #033c92;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    background-color: #cfb69b;
+    border-radius: 5px;
+    border: 2px solid #001d49;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+figure * {
+    padding: 0.5rem;
+}
+
+.weatherCredit {
+    font-size: 0.75rem;
+    margin: 0.5rem auto 0rem auto;
+}
+
+footer h2 {
+    margin: 0px;
+}
+
+footer {
+    text-align: center;
+}

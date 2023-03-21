@@ -1,0 +1,53 @@
+----keyframes is a framework built within CSS that allows us to build custom functions. There are already prebuilt functions like transform, and keyframes allows us to make our own functions like that.
+
+----"@keyframes functionName" is the syntax to start a keyframes function
+
+----To make a CSS Keyframe, you need at least 4 things: 
+    1. an element with an animation name
+    2. duration
+    3. at least two CSS stylings
+    4. a start point and end point
+
+---"from" is used as the starting point (0%) for the key frames function & "to" is used as the ending point (100%) for the key frames function
+
+----0% is also the start & 100% is also the end. You can also use any percentage within 0-100 to change the key frame
+
+----Resolving duplicates
+    If multiple keyframe sets exist for a given name, the last iteration encountered will be used & all past iterations will be ignored. @keyframes rules do not cascade so animations only derive keyframes from one rule set, no other rule sets of the same name. 
+    For example, you cannot make one keyframe named "moveElement" to make an element move up, then make another keyframe of the same name that makes the element move down. Whichever keyframe is called second is the one that will take over.
+
+----Keyframes activate automatically upon a website loading in. One way to control when the keyframes activate is to use a JavaScript event listener with the onclick & toggleClassList functions to add a class to an element. Then in your CSS file, you tie the animation attributes to that toggled class, then the Keyframe animation will activate on a button click.
+
+----Timing:
+You can specify the timing of the animation using the animation-timing-function property.
+--Ease is the default which means it will start and end the animation slowly, and the middle point will be fast.
+--The second is linear where the animation has the same speed from start to end
+--The third is Ease-In where the animation will start slowly and speed up as time goes on
+The fourth is ease-out where the animation will start quickly and slow down as time goes on
+--the fifth is Ease-In-Out where the animation starts and ends slowly. It is very similar to default Ease
+The sixth and final timing is Cubic Bezier where you define your own values. The Cubic Bezier function is defined by four points as x1, y1, x2, y2
+
+----Delay
+Delay is self-explanatory so you can delay the animation to start based on seconds. If you don't specify delay then there is no delay. You can put in negative seconds so the animation starts at an earlier point in the animation and skips anything before that time jump.
+
+----Repeat
+Repeat is also self explanatory. Default is 1 so the animation only plays once. You can go as little as 1 or as high as infinite.
+
+----Direction
+You can control which direction the animation plays. By default, it plays from beginning to end
+Reverse, plays from end to beginning
+Alternate, plays beg to end, then end to beg
+Alternate-Reverse plays end to beg, then beg to end
+For Alternate and Alternate-Reverse, you must set the animation-iteration-count to at least 2 so it can play both forwards & backwards. You can set the iteration higher to play as many times as you want.
+
+----Fill Mode
+Before the animation plays, the element will have whatever styling is determined outside the function. After the animation plays, the element will return to that styling. You can use fill mode to override that.
+None is defualt.
+Forwards means it will play through the animation as normal, then it will stay at whatever the last keyframe was at the end of the animation.
+Backwards means the first keyframe will immediately play, regardless of any delays, then any delays will start, then the animation will play as normal, then the styling will return to how it was before the animation, like default.
+Both means it will do the backwards styling, then keep the final styling from Forwards
+
+----Shorthand
+These attributes can clog up your code so you can write it in shorthand. The shorthand is 
+/* Name Duration Timing Delay Repeat Direction Fill-Mode */
+This shorthand and longhand do the same thing. Longhand is easier to read but shorthand cleans up the styling a lot.

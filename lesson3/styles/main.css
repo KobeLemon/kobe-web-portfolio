@@ -1,0 +1,209 @@
+/* Generic Styling -- This styling applies to more than one page*/
+
+html {
+    background-color: #fffff0;
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 120px;
+}
+
+header {
+    border-radius: 5px;
+    background-color: #00006c;
+    color: #5ad18a;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: #00006c;
+    color: #5ad18a;
+    border-radius: 5px;
+    margin: auto;
+}
+
+nav a {
+    color: #5ad18a;
+    font-size: 1.2rem;
+}
+
+a:hover { 
+    background-color: #368154;
+    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 1em 2em 0 2em;
+    text-align: center;
+    row-gap: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Serif', 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+a, p, ul {
+    font-family: 'Noto Sans', 'PT Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+header > h1 {
+    font-size: 3em;
+}
+
+header > h2 {
+    font-size: 2.3em;
+}
+
+body {
+    margin: 10px auto 0px auto;
+    width: 80%;
+    position: relative;
+    min-height: 100vh;
+}
+
+a:link {
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+.section-title {
+    font-weight: bolder;
+    color: #368154;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #368154;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#site-purpose-description, #target-audience-description, img {
+    margin: 20px;
+}
+
+p {
+    line-height: 25px;
+}
+
+ol > li {
+    line-height: 35px;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #00006c;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: #5ad18a;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    text-align: center;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Design Page -- this styling only applies to the design.html file */
+
+#design-title {
+    width: 110px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+table {
+    border-spacing: 0;
+    border: 1px solid black;
+    margin: 10px auto;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+}
+
+td, th {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#title-row {
+    font-size: 2em;
+    background-color: #00006c;
+    color: #5ad18a;
+}
+
+#header-sample {
+    font-size: 3em;
+    background-color: #247620;
+    color: white;
+}
+
+#primary-nav-sample, #footer-sample {
+    font-size: 1.4em;
+    background-color: #247620;
+    color: white;
+}
+
+#h1-sample {
+    font-size: 2em;
+}
+
+#h2-sample {
+    font-size: 1.5em;
+}
+
+#h3-sample {
+    font-size: 1.4em;
+}
+
+.green-bgcolor {
+    background-color: #247620;
+    color: white;
+}
+
+.headings-fontcolor {
+    color: #033c92;
+}
+
+.headings-table-bgcolor {
+    background-color: #033c92;
+    color: white;
+}
+
+#paragraph-table-bgcolor {
+    background-color: #5C5043;
+    color: white;
+}
+
+#paragraph-fontcolor {
+    color: #5C5043;
+}

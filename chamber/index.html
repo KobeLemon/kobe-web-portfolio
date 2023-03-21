@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kobe Lemon">
+    <meta name="description" content="Chamber of Commerce Main Page | Kobe Lemon">
+    <title>Chamber of Commerce Home | Kobe Lemon</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Serif:wght@700&family=PT+Sans&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone & default styling -->
+    <link href="styles/base.css" rel="stylesheet">
+    <!-- tablet styling -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- laptop & desktop styling -->
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+<!-- Chamber Meeting Banner -->
+    <h2 id="chamberMeetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+<!-- HEADER -->
+	<header>
+        <a class="headerLogoBox" href="./index.html">
+            <img class="headerLogo hoverZoom" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle.">
+        </a>
+        <div class="headerBox">
+            <h1 class="chamberTitle">Syracuse City <br>Chamber of Commerce</h1>
+        <!-- NAVIGATION -->
+            <figure class="socialMediaLinks">
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/facebook_logo.webp" alt="Link to our Facebook"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/linkedin_logo.webp" alt="Link to our LinkedIn"></a>
+            </figure>
+            <div id="currentDate"></div>
+            <nav id="navbar">
+                <button id="hamburgerBtn">
+                    <!-- Hamburger Open Menu Icon -->
+                    <span>&#9776;</span>
+                    <!-- X Close Menu Icon -->
+                    <span>X</span>
+                </button>
+                <ul id="primaryNav">
+                    <li class="currentPage hoverZoom"><a href="index.html">Home</a></li>
+                    <li class="currentPage hoverZoom"><a href="discover.html">Discover</a></li>
+                    <li class="currentPage hoverZoom"><a href="directory.html">Directory</a></li>
+                    <li class="currentPage hoverZoom"><a href="join.html">Join</a></li>
+                    <li class="currentPage hoverZoom"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- CONTENT -->
+    <main>
+        <div class="content">
+<!-- Hero Banner -->
+            <section class="tile mediumColumn1" id="heroBanner">
+                <picture>
+                    <!-- <source media="(min-width: 1028px)" srcset="images/wdd230-org3000.webp">
+                    <source media="(min-width: 715px)" srcset="images/wdd230-org2500.webp"> -->
+                    <img class="bannerImg" src="images/syracuse_banner.webp" alt="Picture of Cat Tails in Syracuse City.">
+                </picture>
+                <h2 class="heroTitle" >Welcome to Syracuse!</h2>
+                <!-- <p class="overlay" id="smallOverlay">Small</p>
+                <p class="overlay" id="mediumOverlay">Medium</p>
+                <p class="overlay" id="largeOverlay">Large</p> -->
+                <!-- <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a> -->
+                <div class="heroDescription">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
+                </div>
+                <a class="joinLink hoverZoom mediumColumn1" href="join.html">Join the Chamber!</a>
+            </section>
+<!-- Events -->
+            <section class="events tile mediumColumn1">
+                <h2 class="eventTitle">Events</h2>
+                <ul class="eventsItems">
+                    <li>
+                        <p>Chamber Council Meeting</p>
+                        <p>02/09/2023</p>
+                        <p>Mexi-Thai Yodel - 5pm-6pm</p>
+                    </li>
+                    <li>
+                        <p>Chamber Fundraiser</p>
+                        <p>02/10/2023</p>
+                        <p>The Luau Palace - 10am-2pm</p>
+                    </li>
+                    <li>
+                        <p>Children's Workshop</p>
+                        <p>02/15/2023</p>
+                        <p>Manny's Hardware - 4pm-7pm</p>
+                    </li>
+                </ul>
+                <a class="eventsLink hoverZoom" href="#">Learn More!</a>
+            </section>
+<!-- Weather -->
+            <section class="weather tile">
+                <h2>Weather</h2>
+                <figure class="iconTempBox">
+                    <img src="images/placeholder75x75.webp" alt="Filler ALT" id="weatherIcon">
+                    <p id="currentTemp"></p>
+                    <figcaption></figcaption>
+                </figure>
+                <hr>
+                <p id="windspeed"></p>
+                <p id="windchill"></p>
+                <p id="humidity"></p>
+            </section>
+<!-- Join -->
+            <section class="join tile mediumColumn1">
+                <h2>Join</h2>
+                <div class="joinDescription">
+                    <p>Thank you for visiting the Syracuse City Chamber of Commerce! We are a group of like-minded business owners who want to create a fair and supportive market that allows for a healthy competition.</p>
+                    <p>Syracuse City is a family so we want to preserve our small town roots by protecting and supporting small local businesses. If you own a local business in Syracuse, we would love for you to join us in keeping Syracuse City happy and fair!</p>
+                </div>
+                <a class="joinLink hoverZoom" href="join.html">Join Us!</a>
+            </section>
+<!-- News -->
+            <section class="news tile mediumColumn1">
+                <h2>News</h2>
+                <ul class="newsItems">
+                    <li>Newly elected Mayor Smith always wears funny hats in public. Are these hats too immature for a political office or do they humanize him and show his willingness to serve?</li>
+                    <li>Police bravely vanquished an evil mouse who broke into a citizen's kitchen to steal his cheese.</li>
+                    <li><strong><em>Mexi-Thai Yodel</em></strong> brings new flavors to town! A new Mexican-Thai fusion restaurant just opened and get this - the servers only talk by yodeling! Go to the corner of 36th and Sparkle St. to find this trendy new spot!</li>
+                    <li>Mayor Smith proposed a new city mandate that will require citizens to wear funny hats at all times in public places. Is this the start of an Orwellian Dystopian future, or just a kooky mayoral proposal? You decide in our poll!</li>
+                </ul>
+                <a class="newsLink hoverZoom" href="#">Learn More!</a>
+            </section>
+<!-- Spotlights -->
+            <section id="spotlightBox" class="tile mediumColumn1">
+                <h2>Business <br>Spotlights</h2>
+                <div class="spotlightSubBox">
+                    <div class="spotlights" id="spotlight1">
+                        <h2 class="spotlightName" id="slName1">Filler Name</h2>
+                        <img src="./images/placeholder75x75.webp" class="spotlightLogo" id="slLogo1" alt="Filler Alt">
+                        <p class="spotlightTagline" id="slTag1">Filler Tagline</p>
+                        <hr>
+                        <a href="#" class="spotlightSiteLink hoverZoom" id="slLink1">Filler Site</a>
+                        <p class="spotlightPhoneNum" id="slPhone1">Filler Phone</p>
+                    </div>
+                    <div class="spotlights" id="spotlight2">
+                        <h2 class="spotlightName" id="slName2">Filler Name</h2>
+                        <img src="./images/placeholder75x75.webp" class="spotlightLogo" id="slLogo2" alt="Filler Alt">
+                        <p class="spotlightTagline" id="slTag2">Filler Tagline</p>
+                        <hr>
+                        <a href="" class="spotlightSiteLink hoverZoom" id="slLink2">Filler Site</a>
+                        <p class="spotlightPhoneNum" id="slPhone2">Filler Phone</p>
+                    </div>
+                    <div class="spotlights" id="spotlight3">
+                        <h2 class="spotlightName" id="slName3">Filler Name</h2>
+                        <img src="./images/placeholder75x75.webp" class="spotlightLogo" id="slLogo3" alt="Filler Alt">
+                        <p class="spotlightTagline" id="slTag3">Filler Tagline</p>
+                        <hr>
+                        <a href="" class="spotlightSiteLink hoverZoom" id="slLink3">Filler Site</a>
+                        <p class="spotlightPhoneNum" id="slPhone3">Filler Phone</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+<!-- FOOTER -->
+<footer>
+    <p class="weatherCredit">Weather data from <a href="https://openweathermap.org/">https://openweathermap.org/</a></p>
+    <figure>
+        <a href="./index.html"><img class="hoverZoom footerLogo" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle."></a>
+    </figure>
+    <div class="footerBox1">
+        <div class="footerTitle">
+            <h2>Syracuse City Chamber of Commerce</h2>
+        </div>
+        <h2 class="chamberAddress">123 Main St.<br>
+            Syracuse, UT 84075
+        </h2>
+    </div>
+    <div class="footerBox2">
+        <h2 class="chamberEmail hoverZoom">✉ info@cusecham.org</h2>
+        <h2 class="chamberPhone hoverZoom">☏ (123) 456-7890</h2>
+        <a href="https://www.google.com/maps/place/Syracuse,+UT/@41.0948008,-112.1278491,11.82z/data=!4m5!3m4!1s0x8752fd0925f39bdd:0x66de35e949280ee1!8m2!3d41.0893878!4d-112.0646657?hl=en" target="_blank">
+            <img src="images/map_picture.webp" alt="Link to Map Directions" class="hoverZoom map">
+        </a>
+    </div>
+    <hr>
+    <div class="footerBox3">
+        <h2>&copy; <span id="copyrightYear"></span> | Kobe Lemon | WDD 230 |</h2>
+        <h2>Last Updated: <span id="lastModified"></span><!-- This <h2> is where the JavaScript will place the "last modified" date/time --></h2>
+    </div>
+</footer>
+
+<script src="scripts/spotlights.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

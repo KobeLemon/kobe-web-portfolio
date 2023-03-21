@@ -1,0 +1,783 @@
+/* Phone / Main Sizing */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; 
+    background-color: rgb(255,255,240);
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+main {
+    width: 99%;
+    margin: auto;
+}
+
+/* Base Styling of the Header and its descendants */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #247620;
+}
+
+.headerBox {
+    display: flex;
+    background-color: #247620;
+    color: whitesmoke;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.headerLogo {
+    width: 8rem;
+    margin-top: 1rem;
+}
+
+.chamberTitle {
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.socialMediaLinks {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0.8rem;
+}
+
+.socialLogo {
+    padding: 0.5rem;
+}
+
+/* NavBar Base Styling */
+nav {
+    background-color: #247620;
+    height: fit-content;
+    margin: auto;
+    width: fit-content;
+}
+
+nav button {
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+nav ul li {
+    margin-top: 0.8rem;
+    font-size: 2rem;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    padding-bottom: 0.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#hamburgerBtn {
+    background-color: #1d5e19; 
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+#hamburgerBtn.open {
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+nav ul {display: none;}
+
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block; color: whitesmoke;}
+#hamburgerBtn span:nth-child(2) {display: none; color: whitesmoke;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none; color: whitesmoke;}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+    color: whitesmoke;
+    background-color: #247620;
+    padding: 0.3rem;
+    border-radius:0.5rem;
+}
+
+#navbar.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #1d5e19;
+    margin-bottom: 0.8rem;
+    align-items: center;
+}
+
+#currentDate {
+    padding: 0.8rem;
+    background-color: #1d5e19;
+    border-radius: 0.5rem;
+    width: 99%;
+    text-align: center;
+}
+/* End of NavBar Base Styling */
+/* End of Header Base Styling */
+
+/* Main Page Content Base Styling */
+p, a, li {font-family: 'Noto Sans', 'PT Sans', sans-serif; color: #033c92;}
+h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
+
+.content {
+    margin-bottom: 1rem;
+}
+
+/* Chamber Meeting Banner Base Styling */
+#chamberMeetingBanner {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    height: fit-content;
+    color: #195216;
+    background-color: #cfb69b;
+    margin: 0;
+}
+/* End of Chamber Meeting Banner Base Styling */
+
+/* Hero Banner Base Styling */
+#heroBanner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    position: relative;
+}
+
+#heroBanner h2 {
+    font-size: 2.55rem;
+    width: 100%;
+}
+
+#heroBanner p {
+    margin-bottom: 0;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.heroTitle {
+    position: absolute;
+    top: 7rem;
+    left: auto;
+    right: auto;
+    color: #0eef02;
+    text-shadow: 0 0 20px white;
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    height: fit-content;
+}
+
+#mediumOverlay, #largeOverlay {
+    display: none;
+}
+/* End of Hero Banner Base Styling */
+
+/* General Tile Base Styling */
+.tile {
+    padding: 0.8rem;
+    height: 100%;
+    border-radius: 0.8rem;
+    color: #195216;
+    text-align: center;
+    background-color: #cfb69b;
+    margin-top: 1rem;
+}
+
+.tile h2 {
+    margin-top: 0;
+}
+/* End of General Tile Base Styling */
+
+/* Weather Tile Base Styling */
+#weatherIcon {
+    width: 75px;
+    height: 75px;
+}
+
+.iconTempBox figure {
+    margin: auto 10px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconTempBox {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather p {
+    font-size: 1.25rem;
+}
+
+.iconTempBox figcaption {
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+#currentTemp {
+    margin: auto 0px;
+    font-size: 1.5rem;
+}
+
+.speedChillBox p {
+    margin: auto 0;
+}
+
+/* End of Weather Tile Base Styling */
+
+/* Join Tile Base Styling */
+.join {
+    display: block;
+}
+
+.eventImg {
+    width: 5rem;
+    height: 3rem;
+}
+
+.joinDescription, .heroDescription {
+    padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.joinLink {
+    display: block;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #247620;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.joinLink h2 {
+    margin: 0;
+    width: fit-content;
+}
+/* End of Join Tile Base Styling */
+
+/* News & Events Tiles Base Styling */
+.newsLink, .eventsLink {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #247620;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+}
+
+.newsItems {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+.newsItems {
+    padding-left: 1rem;
+}
+
+.eventsItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eventsItems li {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+}
+/* End of News & Events Tiles Base Styling */
+
+/* Spotlights Tiles Base Styling */
+.spotlightSubBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 230px;
+}
+
+.spotlights {
+    border: 1px solid #033c92;
+    background-color: lightgray;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.spotlights h2 {
+    font-size: 1.4rem;
+}
+
+.spotlightLogo {
+    width: 200px;
+    height: 100px;
+}
+
+.spotlightTagline {
+    font-size: 1.2rem;
+}
+
+.spotlightSiteLink, .spotlightPhoneNum, .spotlights hr {
+    font-size: 1rem;
+    margin-top: 0px;
+}
+/* End of Spotlights Tiles Base Styling */
+
+/* Main Page Links Styling */
+nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover, #submit:hover {
+    background-color: #033c92;
+    border-radius: 0.5rem;
+}
+
+.socialMediaLinks a:hover{
+    background-color: #033c92;
+    border-radius: 0.5rem;
+}
+/* End of Main Page Links Styling */
+/* End of Main Page Content Base Styling */
+
+/* Discover Page Content Base Styling */
+#discoverPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#discoverTitle, .directoryTitle {
+    font-size: 3rem;
+    color: #195216;
+    text-align: center;
+}
+
+.imgBox {
+    width: 100%;
+}
+
+.imgBox h3 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2rem;
+    color: #195216;
+}
+
+.images {
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+img[data-src] {
+    filter: blur(0.5rem);
+}
+
+img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+    border-radius: 0.8rem;
+}
+
+.imgDescription {
+    padding: 0rem 0.5rem;
+    color: #033c92;
+}
+
+.cityInfoSource {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: #247620;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.visitBox {
+    text-align: center;
+    background-color: #247620;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: whitesmoke;
+}
+
+.cityInfoSource p, .cityInfoSource a {
+    color: whitesmoke;
+    margin-bottom: 0px;
+    padding: 0.5rem;
+}
+
+.cityInfoSource a:hover {
+    background-color: #033c92;
+    border-radius: 0.7rem;
+}
+/* End of Discover Page Content Base Styling */
+
+/* Directory Page Base Styling */
+#gridLayout {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    row-gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+
+#btnGridList {
+    height: 2rem;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
+    background-color: #cfb69b;
+    color: #195216;
+    font-weight: bold;
+}
+
+#gridLayout .directoryCard {
+    background-color: #cfb69b;
+    color: #195216;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+#gridLayout .directoryCard {
+    width: 320px;
+}
+
+.directoryCard h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.directoryCard img {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    margin: 10px 5px;
+}
+
+#listLayout {
+    margin-bottom: 1rem;
+}
+
+#listLayout section:nth-of-type(odd) {
+    background-color: #cfb69b;
+}
+
+#listLayout .directoryCard .listNone {
+    display: none;
+}
+
+#listLayout .directoryCard {
+    color: #195216;
+    padding: 1rem;
+}
+/* End of Directory Page Base Styling */
+
+/* Join Page Base Styling */
+.joinTitle, label, h3, #thankYouPage h2 {
+    color: #195216;
+}
+
+.joinForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.joinForm h3, .membershipBenefits h3 {
+    font-size: 2rem;
+}
+
+.joinTitle {
+    width: fit-content;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.applicantInfo label, .businessInfo label {
+    font-size: 1.5rem;
+}
+
+.applicantTitle {
+    margin-bottom: 0px;
+}
+
+#requiredSubtitle {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.applicantInfo *, .businessInfo * {
+    display: block;
+    padding: 0.5rem;
+}
+
+.applicantInfo label {
+    padding: 0.5rem;
+}
+
+input, textarea {
+    border: 1px solid #5C5043;
+    border-radius: 0.5rem;
+}
+
+.applicantInfo label input {
+    margin-top: 0.5rem;
+}
+
+#businessDescription {
+    height: 3rem;
+}
+
+#desExample {
+    margin: 0px;
+    font-size: 1rem;
+    color: #033c92;
+}
+
+.membership * {
+    width: fit-content;
+}
+
+.membRadio {
+    display: block;
+    padding: 0.5rem;
+    color: #033c92;
+}
+
+#submit {
+    padding: 0.5rem;
+    width: fit-content;
+    margin-top: 2rem;
+    background-color: #247620;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+.membershipBenefits {
+    margin: 0 4rem;
+}
+
+.membershipBenefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.membershipBenefits ul li {
+    font-size: 1.2rem;
+}
+
+/* End of Join Page Base Styling */
+
+/* Contact Page Styling */
+
+#contactPage {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    column-gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.contactPageTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #195216;
+}
+
+.contactBox1, .contactBox2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4.5rem;
+    justify-content: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormTitle {
+    margin-bottom: 0px;
+}
+
+.indicateRequired {
+    margin-left: 1rem;
+}
+
+#contactPage form #submit {
+    align-self: center;
+    margin: 1rem auto;
+}
+
+.contactBox1 input, .contactBox2 input {
+    max-width: 10rem;
+    padding: 0.25rem;
+}
+
+.contactBox1 label, .contactBox2 label, #message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#message {
+    margin: 1rem;
+}
+
+#contactPage h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.chamberInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chamberInfo h4 {
+    font-size: 1.5rem;
+    color: #195216;
+    margin: 0px;
+}
+
+.chamberEmail {
+    margin-bottom: 0px;
+}
+
+.chamberAddress {
+    margin: 0.5rem auto;
+}
+
+.chamberInfo * {
+    width: fit-content;
+}
+
+.chamberInfoTitle, .contactFormTitle {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+/* End of Contact Page Styling */
+
+/* Thank You Page Base Styling */
+#thankYouPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 3rem auto 10rem auto;
+    text-align: center;
+}
+
+#thankYouPage h2 {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+#thankYouPage h3 {
+    color: #033c92;
+    font-size: 2rem;
+}
+/* End of Thank You Page Base Styling */
+
+/* Footer Base Styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #247620;
+    padding-top: 0.8em;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.weatherCredit {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.weatherCredit a {
+    color: whitesmoke;
+}
+
+.footerLogo {
+    width: 9rem;
+}
+
+.footerTitle {
+    margin-top: 0px;
+}
+
+.map {
+    width: 17rem;
+    height: 100px;
+}
+
+hr {
+    color: #5C5043;
+    width: 90%;
+    font-size: large;
+}
+/* End of Footer Base Styling */

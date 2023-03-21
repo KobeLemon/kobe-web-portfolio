@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kobe Lemon">
+    <meta name="description" content="CSS Keyframes Presentation | Kobe Lemon">
+    <title>CSS Keyframes Presentation | Kobe Lemon</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Serif:wght@700&family=PT+Sans&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 230 | CSS Keyframes</h1>
+        <h2>Kobe Lemon</h2>
+    </header>
+    
+    <main>
+        <video src="css_keyframes.mp4" loading="lazy" controls></video>
+        <p>Edit--The video shows the "scale" CSS property being used incorrectly, but I fixed that error after recording the video.</p>
+        <h2 class="sectionTitle">Basic Keyframe Animation</h2><span>This animation is automatic. </span>
+        <div class="exampleBox">
+            <button class="example basic" id="basicAnimation">Basic</button>
+        </div>
+
+        <h2 class="sectionTitle" onclick="activateExample('.timingJS', 'timing')">Timing</h2><span>↑ Click above to activate animation </span>
+        <div class="exampleBox">
+            <button class="example timingJS" id="timingEase">Ease</button>
+            <button class="example timingJS" id="timingLinear">Linear</button>
+            <button class="example timingJS" id="timingEaseIn">Ease-In</button>
+            <button class="example timingJS" id="timingEaseOut">Ease-Out</button>
+            <button class="example timingJS" id="timingEaseInOut">Ease-In-Out</button>
+            <button class="example timingJS" id="timingCubicBezier">Cubic Bezier</button>
+        </div>
+
+        <h2 class="sectionTitle" onclick="activateExample('.delayJS', 'delay')">Delay</h2><span>↑ Click above to activate animation </span>
+        <div class="exampleBox">
+            <button class="example delayJS" id="positiveDelay">Positive</button>
+            <button class="example delayJS" id="negativeDelay">Negative</button>
+        </div>
+
+        <h2 class="sectionTitle" onclick="activateExample('.repeatJS', 'repeat')">Repeat</h2><span>↑ Click above to activate animation </span>
+        <div class="exampleBox">
+            <button class="example repeatJS" id="repeatThree">Three</button>
+            <button class="example repeatJS" id="repeatInfinite">Infinite</button>
+        </div>
+
+        <h2 class="sectionTitle" onclick="activateExample('.directionJS', 'direction')">Direction</h2><span>↑ Click above to activate animation </span>
+        <div class="exampleBox">
+            <button class="example directionJS" id="directionNormal">Normal</button>
+            <button class="example directionJS" id="directionReverse">Reverse</button>
+            <button class="example directionJS" id="directionAlternate">Alternate</button>
+            <button class="example directionJS" id="directionAlternateReverse">Alternate-Reverse</button>
+        </div>
+
+        <h2 class="sectionTitle" onclick="activateExample('.fillModeJS', 'fillMode')">Fill Mode</h2><span>↑ Click above to activate animation </span>
+        <div class="exampleBox">
+            <button class="example fillModeJS" id="fillNone">None</button>
+            <button class="example fillModeJS" id="fillForwards">Forwards</button>
+            <button class="example fillModeJS" id="fillBackwards">Backwards</button>
+            <button class="example fillModeJS" id="fillBoth">Both</button>
+        </div>
+
+        <h2 class="sectionTitle" onclick="activateShortLong()">Shorthand</h2><span>↑ Click above to activate animation </span>
+        <div class="exampleBox">
+            <div id="shortLongBox">
+                <button class="example longJS">Long Hand</button>
+                <button class="example shortJS">Short Hand</button>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

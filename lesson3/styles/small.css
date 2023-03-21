@@ -1,0 +1,47 @@
+@media only screen and (max-width: 767px) {
+    header {
+        box-shadow: 0 0 15px rgb(50 50 50 / 80%);
+        padding: 1px 20px 20px 20px;
+    }
+
+    body {
+        width: 95%;
+        margin: 10px auto auto auto;
+    }
+
+    header > h1 {
+        font-size: 2.5em;
+    }
+    
+    #name {
+        font-size: 2em;
+    }
+
+    #main-content {
+        margin: auto 20px;
+    }
+
+    #design-title {
+        margin: 30px auto 20px 0;
+    }
+
+    img {
+        width: 90%
+    }
+
+    ol >li {
+        padding-right: 20px;
+    }
+
+    /* header, footer, nav {
+        display: block;
+    } */
+    
+    ul > li {
+        width: 100%
+    }
+
+    #table-box {
+        overflow-x: scroll;
+    }
+}

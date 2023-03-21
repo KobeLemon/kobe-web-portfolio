@@ -1,0 +1,94 @@
+html {
+    background-color: rgb(255,255,240);
+}
+
+main {
+    padding-bottom: 120px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(0,0,108);
+    border-radius: 5px;
+    color: rgb(90, 209, 138);
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    padding: 5px;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Noto Serif', 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+p, a {
+    font-family: 'Noto Sans', 'PT Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 10px auto;
+    width: 60%;
+    position: relative;
+    min-height: 100vh;
+}
+
+#profilepic {
+    width: 60%;
+    box-shadow: 0 0 20px rgba(50,50,50,0.8);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#portaltitle {
+    font-weight: bolder;
+    color: rgb(54,129,84);
+}
+
+#name {
+    font-size: 3.5em;
+}
+
+#lessonlist {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(54,129,84)
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    border-bottom: 1px solid black;
+    padding-left: 40px;
+    /* width: ``; */
+}
+
+a {
+    padding: 5px;    
+}
+
+a:hover { 
+    background-color: rgb(54,129,84);
+    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+    border-radius: 5px;
+    color: white;
+}
+
+footer {
+    background-color: rgb(0,0,108);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(90, 209, 138);
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    text-align: center;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    height: 90px;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+}
