@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kobe Lemon">
+    <meta name="description" content="Bountiful Foods Home Page | Kobe Lemon">
+    <title>Bountiful Foods Home Page | Kobe Lemon</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone & default styling -->
+    <link href="styles/base.css" rel="stylesheet">
+    <!-- tablet styling -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- laptop & desktop styling -->
+    <link href="styles/large.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <img class="headerLogo" src="images/bountiful_foods_logo.webp" alt="Bountiful Food's Logo.">
+        <h1>Bountiful Foods</h1>
+        <figure class="socialMediaLinks">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook_logo.webp" alt="Link to our Facebook" class="socialLogo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_logo.webp" alt="Link to our Instagram" class="socialLogo">
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="images/tiktok_logo.webp" alt="Link to our TikTok" class="socialLogo">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter_logo.webp" alt="Link to our Twitter" class="socialLogo">
+            </a>
+        </figure>
+        <!-- Navigation -->
+        <nav id="navbar">
+            <button id="hamburgerBtn">
+                <!-- Hamburger Open Menu Icon -->
+                <span>&#9776;</span>
+                <!-- X Close Menu Icon -->
+                <span>X</span>
+            </button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="contact.html">About Us / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- MAIN CONTENT -->
+    <main class="mainPage">
+        <div class="introduction">
+            <h2>Welcome to Bountiful Foods!</h2>
+            <div class="card introSubBox centerText">
+                <img class="bannerImg" src="images/elaine-casap-qgHGDbbSNm8-unsplash.webp" alt="Two hands holding a bowl of tomatoes.">
+                <p class="introDesc">We are Californians who are dedicated to bringing healthy, tasty food to as many people as possible! We joined together in the goal of service and customer satisfaction and we are here to make your belly happy, full, and healthy!<br><br>This website is our landing page and is here to give you information about us and our goal. Please venture over to "Fresh" page, or use the "Create" link below, to find a juice maker where you can pick three organic fruits and then we will supply you with the nutritional facts of that juice!</p>
+            </div>
+        </div>
+<!-- Recipe Link -->
+        <div class="recipeLinkBox">
+            <h2>Make your own Juice Recipe!</h2>
+            <div class="card centerText">
+                <p>Part of our goal of healthy and organic living is that of making homemade fruit juices and drinks. We know that it can be hard to figure out what fruits go well together, and what fruits are healthier than others. We have created a juice maker form that assists you in making a recipe and the nutritional facts behind it.</p>
+                <p>Please click on the "Create" link below to travel over to our "Fresh" page to get started! If you have any questions or you would like more information about nutrition or about Bountiful Foods in general, please go to our "About Us / Contact" to find our contact information!</p>
+                <div class="createBox">
+                <a href="fresh.html" class="freshLink"><strong>Create →</strong></a>
+                </div>
+            </div>
+        </div>
+<!-- Drink Amount -->
+        <div class="card drinkAmountBox centerText">
+            <p>Hello! You have made <span id="drinkAmountNumber"></span> custom drink recipes so far.</p>
+            <p>Great job! Keep it up!</p>
+        </div>
+<!-- Weather -->
+        <!-- One Day Forecast -->
+        <div class="weatherBigBox">
+            <h2>Weather Forecast</h2>
+            <div class="weatherBox">
+                <div class="card oneDayBox">
+                    <h2>Today</h2>
+                    <img src="images/placeholder75x75.webp" alt="FILLER ALT" id="oneDayIcon" loading="lazy">
+                    <div id="weatherInfo">
+                        <p id="today">Today</p>
+                        <p id="oneDayTemp">FILLER TEXT</p>
+                        <p id="oneDayDesc">FILLER TEXT</p>
+                        <p><strong>Humidity:</strong> <span id="oneDayHumidity">FILLER TEXT</span></p>
+                    </div>
+                </div>
+                <!-- Three Day Forecast -->
+                <div>
+                    <div class="card threeDayBox">
+                        <p id="day1">FILLER TEXT</p>
+                        <img src="images/placeholder75x75.webp" alt="FILLER ALT" id="threeDayIcon1" loading="lazy">
+                        <div>
+                            <p id="threeDayTemp1">FILLER TEXT</p>
+                            <p id="threeDayDesc1">FILLER TEXT</p>
+                            <p><strong>Humidity:</strong> <span id="threeDayHumidity1">FILLER TEXT</span></p>
+                        </div>
+                    </div>
+                    <div class="card threeDayBox">
+                        <p id="day2">FILLER TEXT</p>
+                        <img src="images/placeholder75x75.webp" alt="FILLER ALT" id="threeDayIcon2" loading="lazy">
+                        <div>
+                            <p id="threeDayTemp2">FILLER TEXT</p>
+                            <p id="threeDayDesc2">FILLER TEXT</p>
+                            <p><strong>Humidity:</strong> <span id="threeDayHumidity2">FILLER TEXT</span></p>
+                        </div>
+                    </div>
+                    <div class="card threeDayBox">
+                        <p id="day3">FILLER TEXT</p>
+                        <img src="images/placeholder75x75.webp" alt="FILLER ALT" id="threeDayIcon3" loading="lazy">
+                        <div>
+                            <p id="threeDayTemp3">FILLER TEXT</p>
+                            <p id="threeDayDesc3">FILLER TEXT</p>
+                            <p><strong>Humidity:</strong> <span id="threeDayHumidity3">FILLER TEXT</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- FOOTER -->
+<footer>
+    <a href="resources.html">Link to Resources Page</a>
+    <h2>Bountiful Foods</h2>
+    <h2>123 Main St. Carlsbad, CA 92008</h2>
+    <h2>✉ info@bountfood.org</h2>
+    <h2>☏ (123) 456-7890</h2>
+    <hr>
+    <div class="footerBottom">
+        <h2>&copy; <span id="copyrightYear"></span> | Kobe Lemon | WDD 230 | Last Updated: <span id="lastModified"></span></h2>
+    </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+</html>

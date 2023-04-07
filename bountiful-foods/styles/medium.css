@@ -1,0 +1,66 @@
+/* Tablet Medium Sizing */
+@media only screen and (min-width: 715px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        gap: 6rem;
+        margin: 0px;
+        padding: 1.5rem;
+    }
+
+    .headerLogo {
+        margin-bottom: 1rem;
+        width: 10rem;
+    }
+
+    .socialMediaLinks {
+        height: fit-content;
+    }
+
+    #primaryNav.open {
+        gap: 3rem;
+    }
+    /* End of Header Medium Styling */
+
+    /* Main Content Medium Styling */
+
+    /* Weather Main Medium Styling */
+    .weatherBox {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* End of Weather Main Medium Styling */
+
+    /* End of Main Page Medium Styling */
+
+    /* Fresh Page Medium Styling */
+    #recipeOutput {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* End of Fresh Page Medium Styling */
+}

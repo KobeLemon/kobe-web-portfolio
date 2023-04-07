@@ -63,8 +63,8 @@ ul {
 
 li {
     border-bottom: 1px solid black;
-    padding-left: 40px;
-    /* width: ``; */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 a {

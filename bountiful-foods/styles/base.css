@@ -1,0 +1,318 @@
+/* Phone / Main Sizing */
+
+/* Pink #DC7D7B
+   Blue #1C4F6A
+   Gray #E1E1E1
+   Brown #A77C51
+   #C93D3B
+*/
+
+main {
+    width: 95%;
+    margin: auto;
+}
+
+/* Header Base Styling */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #DC7D7B;
+    color: white;
+}
+
+header h1 {
+    grid-column: 2 / span 1;
+    margin-top: 2.5rem;
+}
+
+.headerLogo {
+    width: 8rem;
+    margin: 1rem;
+}
+
+.socialMediaLinks {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    margin: 1rem 0rem 0rem 2rem;
+    max-height: 138px;
+}
+
+.socialMediaLinks a {
+    text-decoration: none;
+}
+
+.socialLogo {
+    padding: 0.25rem;
+    width: 2.5rem;
+}
+
+/* NavBar Base Styling */
+nav {
+    background-color: #1C4F6A;
+    color: white;
+    grid-column: 1 / -1;
+}
+
+nav button {
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#hamburgerBtn {
+    background-color: #1C4F6A;
+    color: white;
+    border-radius: 0.5rem;
+    height: 50px;
+    width: 100%;
+}
+
+#hamburgerBtn.open {
+    margin-bottom: 0rem;
+    font-size: 2rem;
+    border-bottom: 3px solid white;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open li {
+    width: 99%;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid white;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+    padding: 0.3rem;
+    border-radius:0.5rem;
+}
+
+#primaryNav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+#primaryNav {
+    margin: 0px;
+    padding-top: 1rem;
+}
+/* End of NavBar Base Styling */
+/* End of Header Base Styling */
+
+/* Main Page Content Base Styling */
+p, a, li {font-family: 'Open Sans', sans-serif;}
+h1, h2 {font-family: 'IBM Plex Serif', serif; text-align: center;}
+.content {margin-bottom: 1rem;}
+
+.mainPage {
+    margin-bottom: 3rem;
+}
+
+.bannerImg {
+    width: 15rem;
+    height: 10rem;
+    float: left;
+    margin: 1rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.introDesc {
+    text-align: left;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    background-color: #ffecd4;
+}
+
+.card p {
+    padding: 0.75rem;
+}
+
+.createBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.createBox a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #1C4F6A;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.8rem;
+}
+
+.drinkAmountBox {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Single Weather Tile Base Styling */
+.oneDayBox, .threeDayBox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.oneDayBox {
+    flex-wrap: wrap;
+}
+
+.oneDayBox h2 {
+    width: 100%;
+}
+
+#oneDayIcon {
+    height: 150px;
+}
+
+.threeDayBox div p {
+    margin: 0px auto;
+    padding: 0.5rem;
+}
+
+/* End of Single Weather Tile Base Styling */
+
+/* 3 Day Weather Tile Base Styling */
+.threeDayBox {
+    height: 100px;
+}
+
+#threeDayIcon1, #threeDayIcon2, #threeDayIcon3 {
+    height: 85px;
+}
+
+/* Fresh Page Base Styling */
+.freshPage {
+    margin-bottom: 3rem;
+}
+
+.freshTitle {
+    height: fit-content;
+}
+
+.freshForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffecd4;
+    border-radius: 0.8rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 1.5rem 0px;
+}
+
+label, textarea, #submit, input {
+    max-width: 150px;
+}
+
+#submit {
+    margin-top: 2rem;
+    font-size: 1rem;
+    height: fit-content;
+}
+
+input, textarea {
+    border: 0.5px solid black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.freshPage hr {
+    width: 95%;
+    margin: 2rem auto;
+    color: black;
+}
+
+#recipeOutput {
+    background-color: #ffecd4;
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+}
+
+#recipeInfo, #nutritionInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recipeInfo p, #nutritionInfo p {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    border: 1px solid black
+}
+/* End of Fresh Page Base Styling */
+
+/* Contact Page Base Styling */
+.contactPage {
+    margin-bottom: 4rem;
+}
+
+.bfInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+/* End of Contact Page Base Styling */
+
+/* Footer Base Styling */
+footer {
+    background-color: #DC7D7B;
+    padding: 0.8em;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+}
+/* End of Footer Base Styling */

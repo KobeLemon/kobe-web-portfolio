@@ -16,43 +16,9 @@ function toggleMenu() {
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
-const weekDaynames = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
-];
-// console.log(`Weekday Names: ${weekDaynames}`);
-const months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-];
-// console.log(`Months Names: ${months}`);
-const d = new Date();
-// console.log(`Current Unformatted Date: ${d}`);
-const weekDayNumber = d.getDay()
-// console.log(`Current Weekday Number: ${weekDayNumber}`);
-const weekDayName = weekDaynames[weekDayNumber];
-// console.log(`Current Weekday Name: ${weekDayName}`);
-const monthName = months[d.getMonth()];
-// console.log(`Current Month Name: ${monthName}`);
-const year = d.getFullYear();
-// console.log(`Current Year Name: ${year}`);
-const fulldate = `${weekDayName}, ${d.getDate()} ${monthName} ${year}`;
+const fulldate = new Date().toLocaleDateString('en-us', {weekday: "long", year:"numeric", month:"short", day:"numeric"});
 document.getElementById("currentDate").innerHTML = fulldate;
+
 // console.log(`Current Formatted Date: ${document.getElementById("currentDate").innerHTML}`);
 
 if (weekDayNumber == 1 || weekDayNumber == 2){
@@ -72,7 +38,7 @@ function randomNumber(array) {
 }
 
 function buildMemberArray(companies) {
-	// iterate through data.json and check if membership == "Silver" or "Gold", then append that item to a new list. Then return that list.
+	// iterate through data.json and check if membership == "Silver" or "Gold", & if equal, then append that item to a new list. Then return that list.
 	let newArray = [];
 	companies.forEach((item) => {
 		if (item.membership == "Silver" || item.membership == "Gold"){

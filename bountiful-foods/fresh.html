@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kobe Lemon">
+    <meta name="description" content="Bountiful Foods Fresh Page | Kobe Lemon">
+    <title>Bountiful Foods Fresh Page | Kobe Lemon</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone & default styling -->
+    <link href="styles/base.css" rel="stylesheet">
+    <!-- tablet styling -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- laptop & desktop styling -->
+    <link href="styles/large.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <img class="headerLogo" src="images/bountiful_foods_logo.webp" alt="Bountiful Food's Logo.">
+        <h1>Bountiful Foods</h1>
+        <figure class="socialMediaLinks">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook_logo.webp" alt="Link to our Facebook" class="socialLogo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_logo.webp" alt="Link to our Instagram" class="socialLogo">
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="images/tiktok_logo.webp" alt="Link to our TikTok" class="socialLogo">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter_logo.webp" alt="Link to our Twitter" class="socialLogo">
+            </a>
+        </figure>
+        <!-- Navigation -->
+        <nav id="navbar">
+            <button id="hamburgerBtn">
+                <!-- Hamburger Open Menu Icon -->
+                <span>&#9776;</span>
+                <!-- X Close Menu Icon -->
+                <span>X</span>
+            </button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="contact.html">About Us / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- MAIN CONTENT -->
+    <main>
+        <h2 class="freshTitle">Create your own Juice Recipe!</h2>
+    <!-- Fresh Form -->
+        <div class="freshPage">
+            <form method="get" class="freshForm" id="juiceForm">
+                <!-- First Name -->
+                <label for="fname">First Name*
+                    <input type="text" id="fname" name="fname" required>
+                </label>
+                <!-- Email -->
+                <label for="email">Email*
+                    <input type="email" id="email" name="email" placeholder="youremail@domain.com" required>
+                </label>
+                <!-- Phone -->
+                <label for="phone">Phone Number*
+                    <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" required>
+                </label>
+                <!-- Fruit 1 -->
+                <label for="fruit1">Fruit 1*
+                    <select name="fruit" id="fruit1" class="fruitDropDown"></select>
+                </label>
+                <!-- Fruit 2 -->
+                <label for="fruit2">Fruit 2*
+                    <select name="fruit" id="fruit2" class="fruitDropDown"></select>
+                </label>
+                <!-- Fruit 3 -->
+                <label for="fruit3">Fruit 3*
+                    <select name="fruit" id="fruit3" class="fruitDropDown"></select>
+                </label>
+                <!-- Special Instructions -->
+                <label for="specialInstructions">Special Instructions
+                    <textarea name="specialInstructions" id="specialInstructions" cols="30" rows="5"></textarea>
+                </label>
+        <!-- Submit -->
+                <input type="submit" id="submit" value="Blend!">
+            </form>
+            <hr>
+            <div id="recipeOutput">
+                <div id="recipeInfo">
+                </div>
+                <div id="nutritionInfo">
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+<footer>
+    <a href="resources.html">Link to Resources Page</a>
+    <h2>Bountiful Foods</h2>
+    <h2>123 Main St. Carlsbad, CA 92008</h2>
+    <h2>✉ info@bountfood.org</h2>
+    <h2>☏ (123) 456-7890</h2>
+    <hr>
+    <div class="footerBottom">
+        <h2>&copy; <span id="copyrightYear"></span> | Kobe Lemon | WDD 230 | Last Updated: <span id="lastModified"></span></h2>
+    </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/fresh.js"></script>
+</body>
+</html>

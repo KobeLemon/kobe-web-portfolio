@@ -1,0 +1,53 @@
+/* Laptop / Desktop Large Sizing */
+@media only screen and (min-width: 1000px) {
+
+    /* Header Large Styling */
+    .headerLogo {
+        margin-bottom: 1rem;
+        width: 13rem;
+    }
+    /* End of Header Large Styling */
+
+    /* Main Page Large Styling */
+    .mainPage {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin: 1rem;
+    }
+
+    .introduction {
+        height: 100%;
+    }
+
+    .drinkAmountBox {
+        height: fit-content;
+        margin-top: 0px;
+    }
+
+    .weatherBox {
+        flex-direction: row;
+        gap: 1rem
+    }
+    
+    .threeDayBox {
+        height: fit-content;
+    }
+
+    .threeDayBox {
+        margin-top: 1.5rem;
+        height: 110px
+    }
+    /* End of Main Page Large Styling */
+
+    /* Fresh Page Large Styling*/
+    .freshForm {
+        padding: 1rem 20%;
+    }
+
+    /* End of Fresh Page Large Styling */
+
+    /* Footer Large Styling */
+
+    /* End of Footer Large Styling */
+}
