@@ -1,10 +1,10 @@
 /* Phone / Main Sizing */
 
-/* Pink #DC7D7B
-   Blue #1C4F6A
-   Gray #E1E1E1
-   Brown #A77C51
-   #C93D3B
+/* 
+Pink #DC7D7B
+Blue #1C4F6A
+Gray #E1E1E1
+Brown #A77C51
 */
 
 main {
@@ -27,13 +27,13 @@ header h1 {
 
 .headerLogo {
     width: 8rem;
-    margin: 1rem;
+    margin: 1rem 0.5rem;
 }
 
 .socialMediaLinks {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    margin: 1rem 0rem 0rem 2rem;
+    margin: 1rem 0rem 0rem 1rem;
     max-height: 138px;
 }
 
