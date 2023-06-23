@@ -21,15 +21,17 @@ const threeDayHumidity3 = document.getElementById('threeDayHumidity3');
 const threeDayDesc1 = document.getElementById('threeDayDesc1')
 const threeDayDesc2 = document.getElementById('threeDayDesc2')
 const threeDayDesc3 = document.getElementById('threeDayDesc3')
+const latitude = "33.16226899409092"
+const longitude = "-117.34900482240532"
 
-const url = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=659d1abc1a1e9d987421cfc8b88e65fc&lat=33.16226899409092&lon=-117.34900482240532';
+const url = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=659d1abc1a1e9d987421cfc8b88e65fc&lat=${latitude}&lon=${longitude}`;
 
 async function apiFetch(){
     try{
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             displayResults(data, 0, today, oneDayTemp, oneDayHumidity, oneDayIcon, oneDayDesc);
             displayResults(data, 7, day1, threeDayTemp1, threeDayHumidity1, threeDayIcon1, threeDayDesc1);
             displayResults(data, 15, day2, threeDayTemp2, threeDayHumidity2, threeDayIcon2, threeDayDesc2);

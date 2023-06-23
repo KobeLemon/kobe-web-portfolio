@@ -27,7 +27,11 @@ const displayProphets = (prophets) => {
         // Build the name, birthDate, & birthDate content out to show the prophet's name, birth date, & birth place
         name.textContent = `${prophet.name} ${prophet.lastname}`;
         birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
-        death.textContent = `Date of Death: ${prophet.death}`;
+        if (prophet.death == null) {
+            death.textContent = `Still Living`;
+        } else {
+            death.textContent = `Date of Death: ${prophet.death}`;
+        }
         prophetYears.textContent = `Prophet Years: ${prophet.length}`;
         prophetOrder.textContent = `Prophet # ${prophet.order}`;
         birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
@@ -35,7 +39,7 @@ const displayProphets = (prophets) => {
 
         // Build the image portrait by setting all the relevant attribute
         portrait.setAttribute('src', prophet.imageurl); // fills the image source with the url of the current prophet iteration
-        portrait.setAttribute('alt', `Portrait of ${prophet.name}`) // fills the image alt description with the name of the current prophet iteration
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} | Credit: Church of Jesus Christ of Latter Day Saints`) // fills the image alt description with the name of the current prophet iteration
         portrait.setAttribute('loading', 'lazy'); // sets the loading attribute to laze which defers the loading of the image to only load when the user scrolls near the image
         portrait.setAttribute('width', '330'); // sets the image's width to 340
         portrait.setAttribute('height', '440'); // sets the image's height to 440

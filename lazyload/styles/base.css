@@ -27,6 +27,6 @@ img[data-src] {
 
 img {
     filter: blur(0rem);
-    transition: filter 0.5s;
+    transition: filter 0.25s;
     border-radius: 0.8rem;
 }
