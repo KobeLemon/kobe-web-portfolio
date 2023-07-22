@@ -31,7 +31,7 @@ async function apiFetch(){
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayResults(data, 0, today, oneDayTemp, oneDayHumidity, oneDayIcon, oneDayDesc);
             displayResults(data, 7, day1, threeDayTemp1, threeDayHumidity1, threeDayIcon1, threeDayDesc1);
             displayResults(data, 15, day2, threeDayTemp2, threeDayHumidity2, threeDayIcon2, threeDayDesc2);

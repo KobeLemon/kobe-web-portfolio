@@ -26,8 +26,16 @@
     }
 
     #portaltitle {
+        text-align: center;
         font-size: 1.5em;
-        margin: 25px 20px 25px 35px;
+    }
+
+    .portalDesc {
+        text-align: center;
+    }
+
+    .portalLI {
+        width: 100%;
     }
 
     body {

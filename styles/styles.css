@@ -29,7 +29,7 @@ p, a {
 
 body {
     margin: 10px auto;
-    width: 60%;
+    width: 90%;
     position: relative;
     min-height: 100vh;
 }
@@ -56,15 +56,35 @@ body {
     color: rgb(54,129,84)
 }
 
-ul {
+#lessonlist ul {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
     list-style-type: none;
     padding-left: 0;
 }
 
-li {
+.portalLI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border-bottom: 1px solid black;
-    padding: 0.5rem;
     margin-bottom: 1rem;
+    width: 45%;
+}
+
+.portalLI iframe {
+    margin-top: 1rem;
+    width: 100%;
+    height: 500px;
+}
+
+#codepenPic[src] {
+    width: 100%;
 }
 
 a {

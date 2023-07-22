@@ -38,7 +38,7 @@ body {
     background-color: rgb(238, 238, 238);
     box-shadow: 0 0 15px rgba(50,50,50,0.8);
     border-radius: 5px;
-    max-width: 300px;
+    width: 85%;
 }
 
 .principle-titles {
