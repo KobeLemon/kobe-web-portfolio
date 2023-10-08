@@ -3,6 +3,9 @@ html {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 120px;
 }
 
@@ -15,14 +18,25 @@ header {
     box-shadow: 0 0 15px rgba(50,50,50,0.8);
     padding: 5px;
     align-items: center;
+    text-align: center;
 }
 
-h1, h2 {
+header > section {
+    width: 65%;
+}
+
+header > section > h3 > a {
+    color: rgb(90, 209, 138);
+}
+
+h1, 
+h2 {
     font-family: 'Noto Serif', 'PT Serif', serif;
     letter-spacing: 1px;
 }
 
-p, a {
+p, 
+a {
     font-family: 'Noto Sans', 'PT Sans', sans-serif;
     letter-spacing: 1px;
 }
@@ -58,7 +72,6 @@ body {
 
 #lessonlist ul {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -96,6 +109,21 @@ a:hover {
     box-shadow: 0 0 5px rgba(50,50,50,0.8);
     border-radius: 5px;
     color: white;
+}
+
+#backToTopBtn {
+    background-color: rgb(54,129,84);
+    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+    border: 1px solid rgb(34, 81, 53);
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer > p > a {
+    color: rgb(90, 209, 138);
 }
 
 footer {
