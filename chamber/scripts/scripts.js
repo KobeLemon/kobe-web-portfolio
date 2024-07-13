@@ -1,11 +1,3 @@
-// find the element with the id of "copyrightYear" & update the innerHTML element to show the current year dynamically
-document.getElementById("copyrightYear").textContent = new Date().getFullYear();
-// console.log(`Current Footer Year: ${document.getElementById("copyrightYear").textContent}`);
-
-// find the element with the id of "date" & update the innerHTML to show the document's last modified date/time
-document.getElementById("lastModified").textContent = document.lastModified;
-// console.log(`Current Footer Date/Time: ${document.getElementById("lastModified").textContent}`);
-
 // open & close the hamburger menu when in small & tablet views
 // could also be rewritten to do the same thing but when the button is hovered
 function toggleMenu() {

@@ -214,13 +214,6 @@
         margin-left: 3rem;
         margin-right: 10rem;
     }
-
-    .footerBox3 {
-        display: flex;
-        font-size: 0.8rem;
-        margin: auto;
-        gap: 0.5rem;
-    }
     /* End of Footer Large Styling */
 
 }

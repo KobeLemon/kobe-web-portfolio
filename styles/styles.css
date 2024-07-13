@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(255,255,240);
+    background-color: rgb(255, 255, 240);
 }
 
 main {
@@ -12,10 +12,10 @@ main {
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: rgb(0,0,108);
+    background-color: rgb(0, 0, 108);
     border-radius: 5px;
     color: rgb(90, 209, 138);
-    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    box-shadow: 0 0 15px rgba(50, 50, 50, 0.8);
     padding: 5px;
     align-items: center;
     text-align: center;
@@ -23,21 +23,31 @@ header {
 
 header > section {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header > section > h3 > a {
+header > section > h2 > a {
     color: rgb(90, 209, 138);
 }
 
-h1, 
+.homeSocialMediaLinks {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    gap: 0.5rem;
+}
+
+h1,
 h2 {
-    font-family: 'Noto Serif', 'PT Serif', serif;
+    font-family: "Noto Serif", "PT Serif", serif;
     letter-spacing: 1px;
 }
 
-p, 
+p,
 a {
-    font-family: 'Noto Sans', 'PT Sans', sans-serif;
+    font-family: "Noto Sans", "PT Sans", sans-serif;
     letter-spacing: 1px;
 }
 
@@ -50,14 +60,14 @@ body {
 
 #profilepic {
     width: 60%;
-    box-shadow: 0 0 20px rgba(50,50,50,0.8);
+    box-shadow: 0 0 20px rgba(50, 50, 50, 0.8);
     border-radius: 5px;
     margin: 5px;
 }
 
 #portaltitle {
     font-weight: bolder;
-    color: rgb(54,129,84);
+    color: rgb(54, 129, 84);
 }
 
 #name {
@@ -67,7 +77,7 @@ body {
 #lessonlist {
     font-weight: bold;
     font-size: 1.2em;
-    color: rgb(54,129,84)
+    color: rgb(54, 129, 84);
 }
 
 #lessonlist ul {
@@ -101,19 +111,19 @@ body {
 }
 
 a {
-    padding: 5px;    
+    padding: 5px;
 }
 
-a:hover { 
-    background-color: rgb(54,129,84);
-    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+a:hover {
+    background-color: rgb(54, 129, 84);
+    box-shadow: 0 0 5px rgba(50, 50, 50, 0.8);
     border-radius: 5px;
     color: white;
 }
 
 #backToTopBtn {
-    background-color: rgb(54,129,84);
-    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+    background-color: rgb(54, 129, 84);
+    box-shadow: 0 0 5px rgba(50, 50, 50, 0.8);
     border: 1px solid rgb(34, 81, 53);
     border-radius: 5px;
     color: white;
@@ -127,15 +137,15 @@ footer > p > a {
 }
 
 footer {
-    background-color: rgb(0,0,108);
+    background-color: rgb(0, 0, 108);
     border-radius: 5px;
     padding: 10px;
     color: rgb(90, 209, 138);
-    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    box-shadow: 0 0 15px rgba(50, 50, 50, 0.8);
     text-align: center;
     font-size: 0.75em;
     letter-spacing: 1px;
-    height: 90px;
+    height: fit-content;
     width: 98%;
     position: absolute;
     bottom: 0;
